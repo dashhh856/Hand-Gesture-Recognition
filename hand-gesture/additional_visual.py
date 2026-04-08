@@ -1,0 +1,7 @@
+cm = confusion_matrix(y_new, y_pred_new, labels=model.classes_)
+sns.heatmap(cm, annot=True, fmt='d', xticklabels=model.classes_, yticklabels=model.classes_)
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix - Fresh Data")
+plt.tight_layout()
+plt.show()
